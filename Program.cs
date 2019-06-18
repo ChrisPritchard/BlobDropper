@@ -53,22 +53,6 @@ namespace BlobDropper
             {
                 Error.WriteLine($"Failed to copy down blob data.\r\nError was: {ex.Message}");
             }
-            
-
-            //CloudBlockBlob blockBlob = cloudBlobContainer.GetBlockBlobReference("uploadedfilename.ext");
-
-
-            //MemoryStream memStream = new MemoryStream();
-
-            //blockBlob.DownloadToStream(memStream);
-
-            //HttpContext.Current.Response.ContentType = blockBlob.Properties.ContentType.ToString();
-            //HttpContext.Current.Response.AddHeader("Content-Disposition", "Attachment; filename=" + blockBlob.ToString());
-
-            //HttpContext.Current.Response.AddHeader("Content-Length", blockBlob.Properties.Length.ToString());
-            //HttpContext.Current.Response.BinaryWrite(memStream.ToArray());
-            //HttpContext.Current.Response.Flush();
-            //HttpContext.Current.Response.Close();
         }
     }
 }
